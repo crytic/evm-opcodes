@@ -151,11 +151,7 @@ This page consolidates EVM opcode information from various places including the 
 | `0xf2` | CALLCODE | Message-call into this account with alternative account's code | - |
 | `0xf3` | RETURN | Halt execution returning output data | - |
 | `0xf4` | DELEGATECALL | Message-call into this account with an alternative account's code, but persisting into this account with an alternative account's code | - |
-| `0xf5` | BREAKPOINT | Not in yellow paper FIXME | - |
-| `0xf6` | RNGSEED | Not in yellow paper FIXME | - |
-| `0xf7` | SSIZEEXT | Not in yellow paper FIXME | - |
-| `0xf8` | SLOADBYTES | Not in yellow paper FIXME | - |
-| `0xf9` | SSTOREBYTES | Not in yellow paper FIXME | - |
+| `0xf5` - `0xf9` | Unused | - | - |
 | `0xfa` | STATICCALL | Similar to CALL, but does not modify state | - |
 | `0xfb` | CREATE2 | Create a new account and set creation address to `sha3(sender + sha3(init code)) % 2\*\*160` | - |
 | `0xfc` | TXEXECGAS | Not in yellow paper FIXME | - |
