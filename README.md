@@ -5,6 +5,7 @@ This reference consolidates EVM opcode information from the [yellow paper](http:
 New issues and contributions are welcome, and are covered by bounties from Trail of Bits. Join us in #ethereum on the [Empire Hacking Slack](https://empireslacking.herokuapp.com) to discuss Ethereum security tool development.
 
 ## Notes
+
 The size of a "word" in EVM is 256 bits.
 
 The gas information is a work in progress.
@@ -173,14 +174,16 @@ The gas information is a work in progress.
 | `0xfe` | INVALID | Designated invalid instruction | - | 0 |
 | `0xff` | SELFDESTRUCT | Halt execution and register account for later deletion | - | 5000* | 
 
-
 ## Instruction Details
 
-### `ADD`
+### ADD
+
 Takes two words from stack, adds them, then pushes the result onto the stack.
 
 Pseudocode: `push(s[0]+s[1])`
 
-### `PUSHX`
+### PUSHX
+
 The following X bytes are read from PC, placed into a word, then this word is pushed onto the stack.
-### `CALL`
+
+### CALL
