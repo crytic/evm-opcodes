@@ -26,11 +26,11 @@ The gas information is a work in progress.
 | `0x0a` | EXP | Exponential operation | - | | 10*** |
 | `0x0b` | SIGNEXTEND | Extend length of two's complement signed integer | - | 5 |
 | `0x0c` - `0x0f` | Unused | Unused | - |
-| `0x10` | LT | Less-than comparision | - | 3 |
-| `0x11` | GT | Greater-than comparision | - | 3 |
-| `0x12` | SLT | Signed less-than comparision | - | 3 |
-| `0x13` | SGT | Signed greater-than comparision | - | 3 |
-| `0x14` | EQ | Equality comparision | - | 3 |
+| `0x10` | LT | Less-than comparison | - | 3 |
+| `0x11` | GT | Greater-than comparison | - | 3 |
+| `0x12` | SLT | Signed less-than comparison | - | 3 |
+| `0x13` | SGT | Signed greater-than comparison | - | 3 |
+| `0x14` | EQ | Equality comparison | - | 3 |
 | `0x15` | ISZERO | Simple not operator | - | 3 |
 | `0x16` | AND | Bitwise AND operation | - | 3 |
 | `0x17` | OR | Bitwise OR operation | - | 3 |
@@ -145,15 +145,15 @@ The gas information is a work in progress.
 | `0xa3` | LOG3 | Append log record with three topics | - | 1500 |
 | `0xa4` | LOG4 | Append log record with four topics | - | 1875 |
 | `0xa5` - `0xaf` | Unused | - |
-| `0xb0` | JUMPTO | Tentitive [libevmasm has different numbers](https://github.com/ethereum/solidity/blob/c61610302aa2bfa029715b534719d25fe3949059/libevmasm/Instruction.h#L176)| [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xb1` | JUMPIF | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xb2` | JUMPSUB | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xb4` | JUMPSUBV | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xb5` | BEGINSUB | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xb6` | BEGINDATA | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xb8` | RETURNSUB | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xb9` | PUTLOCAL | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
-| `0xba` | GETLOCAL | Tentitive | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb0` | JUMPTO | Tentative [libevmasm has different numbers](https://github.com/ethereum/solidity/blob/c61610302aa2bfa029715b534719d25fe3949059/libevmasm/Instruction.h#L176)| [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb1` | JUMPIF | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb2` | JUMPSUB | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb4` | JUMPSUBV | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb5` | BEGINSUB | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb6` | BEGINDATA | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb8` | RETURNSUB | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xb9` | PUTLOCAL | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
+| `0xba` | GETLOCAL | Tentative | [EIP 615](https://github.com/ethereum/EIPs/blob/606405b5ab7aa28d8191958504e8aad4649666c9/EIPS/eip-615.md) |
 | `0xbb` - `0xe0` | Unused | - |
 | `0xe1` | SLOADBYTES | Only referenced in pyethereum | - | - |
 | `0xe2` | SSTOREBYTES | Only referenced in pyethereum | - | - |
