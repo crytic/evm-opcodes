@@ -8,7 +8,7 @@ New issues and contributions are welcome, and are covered by bounties from Trail
 
 The size of a "word" in EVM is 256 bits.
 
-The gas information is a work in progress.
+The gas information is a work in progress. If an asterisk is in the Gas column, the base cost is shown but may vary based on the opcode arguments.
 
 ## Table
 
@@ -24,7 +24,7 @@ The gas information is a work in progress.
 | `0x07` | SMOD | Signed modulo remainder operation | - | 5 |
 | `0x08` | ADDMOD | Modulo addition operation | - | 8 |
 | `0x09` | MULMOD | Modulo multiplication operation | - | 8 |
-| `0x0a` | EXP | Exponential operation | - | | 10*** |
+| `0x0a` | EXP | Exponential operation | - | 10* |
 | `0x0b` | SIGNEXTEND | Extend length of two's complement signed integer | - | 5 |
 | `0x0c` - `0x0f` | Unused | Unused | - |
 | `0x10` | LT | Less-than comparison | - | 3 |
@@ -38,7 +38,7 @@ The gas information is a work in progress.
 | `0x18` | XOR | Bitwise XOR operation | - | 3 |
 | `0x19` | NOT | Bitwise NOT operation | - | 3 |
 | `0x1a` | BYTE | Retrieve single byte from word | - | 3 |
-| `0x20` | SHA3 | Compute Keccak-256 hash | - | 30 |
+| `0x20` | SHA3 | Compute Keccak-256 hash | - | 30* |
 | `0x21` - `0x2f`| Unused | Unused |
 | `0x30` | ADDRESS | Get address of currently executing account | - | 2 |
 | `0x31` | BALANCE | Get balance of the given account | - | 400 |
@@ -46,13 +46,13 @@ The gas information is a work in progress.
 | `0x33` | CALLER | Get caller address | - | 2 |
 | `0x34` | CALLVALUE | Get deposited value by the instruction/transaction responsible for this execution | - | 2 |
 | `0x35` | CALLDATALOAD | Get input data of current environment | - | 3 |
-| `0x36` | CALLDATASIZE | Get size of input data in current environment | - | 2 |
+| `0x36` | CALLDATASIZE | Get size of input data in current environment | - | 2* |
 | `0x37` | CALLDATACOPY | Copy input data in current environment to memory | - | 3 |
 | `0x38` | CODESIZE | Get size of code running in current environment | - | 2 |
-| `0x39` | CODECOPY | Copy code running in current environment to memory | - | 3 |
+| `0x39` | CODECOPY | Copy code running in current environment to memory | - | 3* |
 | `0x3a` | GASPRICE | Get price of gas in current environment | - | 2 |
 | `0x3b` | EXTCODESIZE | Get size of an account's code | - | 700 |
-| `0x3c` | EXTCODECOPY | Copy an account's code to memory | - | 700 |
+| `0x3c` | EXTCODECOPY | Copy an account's code to memory | - | 700* |
 | `0x3d` | RETURNDATASIZE | Pushes the size of the return data buffer onto the stack | [EIP 211](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-211.md) | 2 |
 | `0x3e` | RETURNDATACOPY | Copies data from the return data buffer to memory | [EIP 211](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-211.md) | 3 |
 | `0x3f` | Unused | - |
@@ -64,11 +64,11 @@ The gas information is a work in progress.
 | `0x45` | GASLIMIT | Get the block's gas limit | - | 2 |
 | `0x46` - `0x4f` | Unused | - |
 | `0x50` | POP | Remove word from stack | - | 2 |
-| `0x51` | MLOAD | Load word from memory | - | 3 |
+| `0x51` | MLOAD | Load word from memory | - | 3* |
 | `0x52` | MSTORE | Save word to memory | - | 3* |
 | `0x53` | MSTORE8 | Save byte to memory | - | 3 |
 | `0x54` | SLOAD | Load word from storage | - | 200 |
-| `0x55` | SSTORE | Save word to storage | - | 0* |
+| `0x55` | SSTORE | Save word to storage | - | 20000** |
 | `0x56` | JUMP | Alter the program counter | - | 8 |
 | `0x57` | JUMPI | Conditionally alter the program counter | - | 10 |
 | `0x58` | GETPC | Get the value of the program counter prior to the increment | - | 2 |
