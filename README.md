@@ -44,7 +44,7 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0x20` | SHA3 | Compute Keccak-256 hash | - | 30* |
 | `0x21` - `0x2f`| Unused | Unused |
 | `0x30` | ADDRESS | Get address of currently executing account | - | 2 |
-| `0x31` | BALANCE | Get balance of the given account | - | 400 |
+| `0x31` | BALANCE | Get balance of the given account | - | 700 |
 | `0x32` | ORIGIN | Get execution origination address | - | 2 |
 | `0x33` | CALLER | Get caller address | - | 2 |
 | `0x34` | CALLVALUE | Get deposited value by the instruction/transaction responsible for this execution | - | 2 |
@@ -58,19 +58,20 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0x3c` | EXTCODECOPY | Copy an account's code to memory | - | 700* |
 | `0x3d` | RETURNDATASIZE | Pushes the size of the return data buffer onto the stack | [EIP 211](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-211.md) | 2 |
 | `0x3e` | RETURNDATACOPY | Copies data from the return data buffer to memory | [EIP 211](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-211.md) | 3 |
-| `0x3f` | Unused | - |
+| `0x3f` | EXTCODEHASH | Returns the keccak256 hash of a contract's code | [EIP 1052](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1052.md) | 700 |
 | `0x40` | BLOCKHASH | Get the hash of one of the 256 most recent complete blocks | - | 20 |
 | `0x41` | COINBASE | Get the block's beneficiary address | - | 2 |
 | `0x42` | TIMESTAMP | Get the block's timestamp | - | 2 |
 | `0x43` | NUMBER | Get the block's number | - | 2 |
 | `0x44` | DIFFICULTY | Get the block's difficulty | - | 2 |
 | `0x45` | GASLIMIT | Get the block's gas limit | - | 2 |
-| `0x46` - `0x4f` | Unused | - |
+| `0x46` | CHAINID | Returns the current chain’s EIP-155 unique identifier | [EIP 1344](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1344.md) | 2 |
+| `0x47` - `0x4f` | Unused | - |
 | `0x50` | POP | Remove word from stack | - | 2 |
 | `0x51` | MLOAD | Load word from memory | - | 3* |
 | `0x52` | MSTORE | Save word to memory | - | 3* |
 | `0x53` | MSTORE8 | Save byte to memory | - | 3 |
-| `0x54` | SLOAD | Load word from storage | - | 200 |
+| `0x54` | SLOAD | Load word from storage | - | 800 |
 | `0x55` | SSTORE | Save word to storage | - | 20000** |
 | `0x56` | JUMP | Alter the program counter | - | 8 |
 | `0x57` | JUMPI | Conditionally alter the program counter | - | 10 |
