@@ -41,7 +41,7 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0x1b` | SHL | Shift Left | [EIP145](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-145.md) | 3 |
 | `0x1c` | SHR | Logical Shift Right | [EIP145](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-145.md) | 3 |
 | `0x1d` | SAR | Arithmetic Shift Right | [EIP145](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-145.md) | 3 |
-| `0x20` | SHA3 | Compute Keccak-256 hash | - | 30* |
+| `0x20` | KECCAK256 | Compute Keccak-256 hash | - | 30* |
 | `0x21` - `0x2f`| Unused | Unused |
 | `0x30` | ADDRESS | Get address of currently executing account | - | 2 |
 | `0x31` | BALANCE | Get balance of the given account | - | 400 |
