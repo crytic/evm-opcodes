@@ -172,6 +172,7 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0xf5` | CREATE2 | Create a new account and set creation address to `sha3(sender + sha3(init code)) % 2**160` | - |
 | `0xf6` - `0xf9` | Unused | - | - |
 | `0xfa` | STATICCALL | Similar to CALL, but does not modify state | - | 40 |
+| `0xfb` | Unused | - | - |
 | `0xfc` | TXEXECGAS | Not in yellow paper FIXME | - | - |
 | `0xfd` | REVERT | Stop execution and revert state changes, without consuming all provided gas and providing a reason | - | 0 |
 | `0xfe` | INVALID | Designated invalid instruction | - | 0 |
