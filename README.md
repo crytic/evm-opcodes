@@ -67,6 +67,7 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0x45` | GASLIMIT | Get the block's gas limit | - | 2 |
 | `0x46` | CHAINID | Returns the current chain’s EIP-155 unique identifier | [EIP 1344](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1344.md) | 2 |
 | `0x47` - `0x4f` | Unused | - |
+| `0x48` | BASEFEE | Returns the value of the base fee of the current block it is executing in. | [EIP 3198](https://eips.ethereum.org/EIPS/eip-3198) | 2 |
 | `0x50` | POP | Remove word from stack | - | 2 |
 | `0x51` | MLOAD | Load word from memory | - | 3* |
 | `0x52` | MSTORE | Save word to memory | - | 3* |
