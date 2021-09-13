@@ -77,7 +77,7 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0x57` | JUMPI | Conditionally alter the program counter | - | 10 |
 | `0x58` | GETPC | Get the value of the program counter prior to the increment | - | 2 |
 | `0x59` | MSIZE | Get the size of active memory in bytes | - | 2 |
-| `0x5a` | GAS | Get the amount of available gas, including the corresponding reduction the amount of available gas | - | 2 |
+| `0x5a` | GAS | Get the amount of available gas, including the corresponding reduction for the cost of this instruction | - | 2 |
 | `0x5b` | JUMPDEST | Mark a valid destination for jumps | - | 1 |
 | `0x5c` - `0x5f` | Unused | - |
 | `0x60` | PUSH1 | Place 1 byte item on stack | - | 3 |
