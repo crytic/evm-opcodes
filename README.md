@@ -179,11 +179,13 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0xfe` | INVALID | Designated invalid instruction | - | 0 |
 | `0xff` | SELFDESTRUCT | Halt execution and register account for later deletion | - | 5000* | 
 
+**Note** - '*' represent the opcodes which have additional dynamic gas costs
+
 ## Instruction Details
 
 ### ADD
 
-Takes two words from stack, adds them, then pushes the result onto the stack.
+Takes two words from the stack, adds them, and then pushes the result onto the stack.
 
 Pseudocode: `push(s[0]+s[1])`
 
