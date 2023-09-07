@@ -12,7 +12,7 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 
 ## Table
 
-| Opcode | Name | Description | Extra Info | Gas |
+| Bytecode | Name (Opcode) | Description | Extra Info | Gas |
 | --- | --- | --- | --- | --- |
 | `0x00` | STOP | Halts execution | - | 0 |
 | `0x01` | ADD | Addition operation | - | 3 |
