@@ -80,7 +80,10 @@ The gas information is a work in progress. If an asterisk is in the Gas column, 
 | `0x59` | MSIZE | Get the size of active memory in bytes | - | 2 |
 | `0x5a` | GAS | Get the amount of available gas, including the corresponding reduction for the cost of this instruction | - | 2 |
 | `0x5b` | JUMPDEST | Mark a valid destination for jumps | - | 1 |
-| `0x5c` - `0x5f` | Unused | - |
+| `0x5c` | TLOAD | Load word from transient storage | [EIP-1153](https://eips.ethereum.org/EIPS/eip-1153) | 100 |
+| `0x5d` | TSTORE | Save word to transient storage | [EIP-1153](https://eips.ethereum.org/EIPS/eip-1153) | 100 |
+| `0x5e` | Unused | - | - | - |
+| `0x5f` | PUSH0 | Place 0 on stack | [EIP-3855](https://eips.ethereum.org/EIPS/eip-3855) | 2 |
 | `0x60` | PUSH1 | Place 1 byte item on stack | - | 3 |
 | `0x61` | PUSH2 | Place 2-byte item on stack | - | 3 |
 | `0x62` | PUSH3 | Place 3-byte item on stack | - | 3 |
